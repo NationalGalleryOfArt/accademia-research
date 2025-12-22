@@ -3,13 +3,10 @@ collection:
   - https://nationalgalleryofart.github.io/accademia-maps-iiif/index.json
   - https://nationalgalleryofart.github.io/accademia-guidebooks-iiif/index.json
 metadata:
-  - Archive
   - Collection
   - Volume
   - Date
   - Document type
-  - Associated name
-  - Language of document
   - Key terms
 featured:
   - https://nationalgalleryofart.github.io/accademia-documents-iiif/asrtcsvol054216210522/manifest.json
