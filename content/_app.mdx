@@ -4,7 +4,7 @@ import {CanopyHeader, CanopyFooter, GoogleAnalytics} from "@canopy-iiif/app/ui";
 export function Head() {
   return (
     <>
-      <Meta siteTitle="The Early History of the Accademia di San Luca - Resources" />
+      <Meta />
       <Stylesheet />
       <GoogleAnalytics id="GTM-W8XHQQD" />
     </>
@@ -14,19 +14,13 @@ export function Head() {
 export function App({children}) {
   return (
     <>
-      <CanopyHeader
-        navigation={[
-          {href: "/search", label: "Resources"},
-          {href: "/timeline", label: "Timeline"},
-          {href: "/research", label: "Research"},
-          {href: "/about", label: "About"},
-        ]}
-        title="The Early History of the Accademia di San Luca - Resources"
-        logo={Logo}
-      />
+      <CanopyHeader logo={Logo} />
       <main>{children}</main>
       <CanopyFooter>
-        <p>Copyright 2026 National Gallery of Art. A Canopy IIIF Project, MIT License.</p>
+        <p>
+          Copyright 2026 National Gallery of Art. A Canopy IIIF Project, MIT
+          License.
+        </p>
       </CanopyFooter>
     </>
   );
