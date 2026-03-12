@@ -8,6 +8,7 @@ import {
   Metadata,
   RequiredStatement,
   References,
+  Rights,
 } from "@canopy-iiif/app/ui/server";
 
 <Container variant="wide" style={{display: "flex", gap: "2.618rem"}}>
@@ -28,7 +29,7 @@ import {
       options={{
         informationPanel: {
           open: true,
-          renderAbout: false,
+          renderAbout: true,
           renderAnnotation: true,
           defaultTab: "manifest-annotations",
           showIIIFBadge: true,
