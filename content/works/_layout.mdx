@@ -8,7 +8,6 @@ import {
   Metadata,
   RequiredStatement,
   References,
-  Rights,
 } from "@canopy-iiif/app/ui/server";
 
 <Container variant="wide" style={{display: "flex", gap: "2.618rem"}}>
@@ -27,12 +26,12 @@ import {
     <Viewer
       iiifContent={props.manifest.id}
       options={{
+        showIIIFBadge: true,
         informationPanel: {
           open: true,
-          renderAbout: true,
+          renderAbout: false,
           renderAnnotation: true,
           defaultTab: "manifest-annotations",
-          showIIIFBadge: true,
         },
         annotations: {
           motivations: ["tagging"],
